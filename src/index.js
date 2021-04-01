@@ -15,7 +15,7 @@ export const client = new Client(typeBundle, {
   }
 });
 
-ReactDOM.render(
+ReactDOM.hydrate(
   <App client={client}/>,
   document.getElementById('root')
 );
